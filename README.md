@@ -113,7 +113,7 @@ Make sure you have the following software and tools installed:
    Start the backend server:
 
    ```sh
-   npm start
+   node index.js
    ```
 
 3. Start the frontend server
@@ -127,7 +127,6 @@ Make sure you have the following software and tools installed:
    Update the `config.tsx` file with your TMDB API key:
 
    ```sh
-   BROWSER=none
    REACT_APP_BACKEND_URL=http://localhost:5001
    REACT_APP_FRONTEND_URL=http://localhost:3000
    REACT_APP_RESEARCHER_ONE_EMAIL=your_researcher_one_email
