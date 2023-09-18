@@ -75,8 +75,8 @@ You can find the original PHP version of this project [here](https://github.com/
 
 Make sure you have the following software and tools installed:
 
-- Node.js and npm (Node Package Manager)
-- MongoDB (You can install it locally or use a cloud-hosted MongoDB service)
+- [Node.js](https://nodejs.org/) and npm (Node Package Manager)
+- [MongoDB](https://www.mongodb.com/) (You can install it locally or use a cloud-hosted MongoDB service)
 
 ### Setting Up and Running the Application
 
@@ -124,7 +124,7 @@ Make sure you have the following software and tools installed:
    cd frontend
    ```
    
-   Update the `config.tsx` file with your TMDB API key:
+   Create a `.env` file with the following details:
 
    ```sh
    REACT_APP_BACKEND_URL=http://localhost:5001
