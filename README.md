@@ -25,18 +25,15 @@
   </ol>
 </details>
 
-
 ## About The Project
 
 ### Introduction
 
-Research Hub is a comprehensive web application that facilitates research, collaboration among researchers, and access to valuable resources. This project was originally developed in PHP, HTML, CSS, JavaScript, and MySQL and has now been converted to a MERN stack application for improved scalability and functionality.
+Research Hub is a comprehensive web application that facilitates research, collaboration among researchers, and access to support resources. This project was originally developed in PHP, HTML, CSS, JavaScript, and MySQL and has now been converted to a MERN stack application (MongoDB, Express.js, React, Node.js) for improved scalability and functionality.
 
 You can find the original PHP version of this project [here](https://github.com/emeka-okechukwu-dev/research-hub-php).
 
-
 <p>Check out the deployment of the project <a href="" target="_blank">here</a>.</p>
-
 
 ### Features
 
@@ -44,7 +41,7 @@ You can find the original PHP version of this project [here](https://github.com/
 
 - Manage research from hypothesis to publication
 - Collaborate with other researchers
-- View all ongoing and published research
+- View public ongoing and published research
 - View a list of vetted grants
 - View upcoming events and the latest news
 - Manage user profile
@@ -52,7 +49,7 @@ You can find the original PHP version of this project [here](https://github.com/
 #### Administrators
 
 - Manage grants, events, and news
-- View a list of active researchers
+- View a list of researchers
 - Manage admin user profile
 
 ### Built With
@@ -67,7 +64,6 @@ You can find the original PHP version of this project [here](https://github.com/
 - Font Awesome
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## Getting Started
 
@@ -88,10 +84,14 @@ Make sure you have the following software and tools installed:
    git clone https://github.com/emeka-okechukwu-dev/research-hub.git
    ```
 
-2. Start the backend server
+2. Create a MongoDB Database
+
+   Before proceeding, you need to create a MongoDB database named "researchhubdb" and a collection named "adminusers." You can install MongoDB locally or use a cloud-hosted MongoDB service. You can follow the MongoDB tutorial on [how to create a database](https://www.mongodb.com/basics/create-database) to set up the database.
+
+3. Start the backend server
 
    Navigate to the backend directory:
-   
+
    ```sh
    cd backend
    ```
@@ -103,27 +103,27 @@ Make sure you have the following software and tools installed:
    ATLAS_URI=your_mongodb_atlas_uri
    PORT=5001
    ```
-   
+
    Install backend dependencies:
 
    ```sh
    npm install
    ```
-   
+
    Start the backend server:
 
    ```sh
    node index.js
    ```
 
-3. Start the frontend server
+4. Start the frontend server
 
    Navigate to the frontend directory:
 
    ```sh
    cd frontend
    ```
-   
+
    Create a `.env` file with the following details:
 
    ```sh
@@ -132,12 +132,15 @@ Make sure you have the following software and tools installed:
    REACT_APP_RESEARCHER_ONE_EMAIL=your_researcher_one_email
    REACT_APP_RESEARCHER_ONE_PASSWORD=your_researcher_one_password
    REACT_APP_RESEARCHER_ONE_FIRST_NAME=your_researcher_one_first_name
+   REACT_APP_RESEARCHER_TWO_LAST_NAME=your_researcher_one_last_name
    REACT_APP_RESEARCHER_TWO_EMAIL=your_researcher_two_email
    REACT_APP_RESEARCHER_TWO_PASSWORD=your_researcher_two_password
    REACT_APP_RESEARCHER_TWO_FIRST_NAME=your_researcher_two_first_name
+   REACT_APP_RESEARCHER_TWO_FIRST_NAME=your_researcher_two_last_name
    REACT_APP_ADMIN_EMAIL=your_admin_email
    REACT_APP_ADMIN_PASSWORD=your_admin_password
    REACT_APP_ADMIN_FIRST_NAME=your_admin_first_name
+   REACT_APP_ADMIN_LAST_NAME=your_admin_last_name
    ```
 
    Install frontend dependencies:
@@ -152,7 +155,7 @@ Make sure you have the following software and tools installed:
    npm start
    ```
 
-4. Access the application
+5. Access the application
 
    Open a web browser and go to:
 
@@ -162,8 +165,9 @@ Make sure you have the following software and tools installed:
 
    You should now be able to access the application locally.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+   Note: When you access the application for the first time, click on the appropriate button in the "Select Dashboard" section to populate the database with the user details that were set in the `.env` file in the frontend. This step is necessary to set up user profiles and access the full functionality of the application.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
@@ -176,7 +180,6 @@ Every contribution is appreciated. If you have an idea for improving the project
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## Contact
 
