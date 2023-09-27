@@ -86,7 +86,7 @@ Make sure you have the following software and tools installed:
 
 2. Create a MongoDB Database
 
-   Before proceeding, you need to create a MongoDB database named "researchhubdb" and a collection named "adminusers." You can install MongoDB locally or use a cloud-hosted MongoDB service. You can follow the MongoDB tutorial on [how to create a database](https://www.mongodb.com/basics/create-database) to set up the database.
+   Before proceeding, you need to create a MongoDB database named 'researchhubdb' and a collection named 'adminusers.' You can install MongoDB locally or use a cloud-hosted MongoDB service. You can follow the MongoDB tutorial on [how to create a database](https://www.mongodb.com/basics/create-database) to set up the database.
 
 3. Start the backend server
 
